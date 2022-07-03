@@ -2,10 +2,13 @@ FROM ubuntu:18.04
 
 # Install needed packages
 RUN apt update && apt install -y \
+    ack \
     apt-transport-https \
     build-essential \
     ca-certificates \
     clang-10 \
+    clang-tidy \
+    cppcheck \
     curl \
     freeglut3 \
     freeglut3-dev \
@@ -16,14 +19,18 @@ RUN apt update && apt install -y \
     help2man \
     lcov \
     libgl1-mesa-dev \
+    libglfw3-dev \
     libglu1-mesa \
     libjson-perl \
     libperlio-gzip-perl \
+    libqt5opengl5-dev \
     libx11-dev \
     libxcursor1 \
     libxt-dev \
     openssh-client \
     python3-dev \
+    python-yaml \
+    qtbase5-dev \
     software-properties-common \
     wget \
     xvfb
